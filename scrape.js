@@ -63,7 +63,7 @@ async function scrapeDom(webpage, i) {
     // Create an Array out of the HTML Elements for filtering using spread syntax.
     const main = [...dom.window.document.querySelectorAll(".col-sm-8")];
     const title = [...dom.window.document.querySelectorAll("#hero h1")];
-    const justText = convert(main[0].innerHTML);
+    const justText = convert(main[0].innerHTML).replace(/\n{2,}/g, "\n\n");
     const plainTitle = convert(title[0].innerHTML);
 
     const fullDoc = plainTitle + "\n\n" + justText;
