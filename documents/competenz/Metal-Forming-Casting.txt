@@ -92,8 +92,6 @@ This qualification is designed to enable trainees/apprentices employed in the me
 
 The qualification represents a set of foundation skills for mechanical engineering and specific skills in metal casting and engineering pattern making. Metal casting embraces moulding and pattern making skills. Technological advances have initiated a convergence of these historical trades: it is impossible for either to exist in isolation. People awarded this qualification can use the tools and make castings or patterns/tooling applicable to metal casting.
 
-NZQA qualification overview Fees free eligible
-
 New Zealand Diploma in Engineering Practice (NZDEP), Level 6
 
 Graduates of this qualification will be able to:
@@ -114,4 +112,3 @@ Graduates of the Mechanical Engineering strand will also be able to:
  * Design or develop solutions to well-defined engineering problems by applying accepted procedures and methodologies
  * Identify risk and apply risk management techniques to well-defined engineering problems
 
-NZQA qualification overview

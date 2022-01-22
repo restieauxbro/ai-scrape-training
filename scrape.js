@@ -24,6 +24,8 @@ const convert = compile({
     { selector: "img", format: "skip" },
     { selector: ".maori-title", format: "skip" },
     { selector: ".maori-divider", format: "skip" },
+    { selector: ".btn", format: "skip" },
+    { selector: "button", format: "skip" },
   ],
 });
 

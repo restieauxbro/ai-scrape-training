@@ -6,11 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node scrape.js",
-    "write finetune": "node createGptFinetune.js"
+    "write finetune": "node createGptFinetune.js",
+    "amala": "node ./crawlers/crawlAmala.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "get-sitemap-links": "^1.0.6",
     "got": "^11.8.2",
     "html-to-text": "^8.1.0",
     "jsdom": "^17.0.0",

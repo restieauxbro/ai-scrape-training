@@ -103,8 +103,6 @@ Apply knowledge of tool design and function to manufacture tooling for relevant 
 
  
 
-Mechanical engineering NZQA qualification overview
-
 New Zealand Diploma in Engineering Practice (NZDEP), Level 6
 
 Graduates of this qualification will be able to:
@@ -125,4 +123,3 @@ Graduates of the Mechanical Engineering strand will also be able to:
  * Design or develop solutions to well-defined engineering problems by applying accepted procedures and methodologies
  * Identify risk and apply risk management techniques to well-defined engineering problems
 
-NZQA qualification overview

@@ -81,15 +81,11 @@ This qualification aims to benefit building owners and occupiers, the insurance
 
 Graduates will be capable of operating at a technical level of work under limited supervision.
 
-NZQA qualification overview
-
 New Zealand Certificate in Hand Operated Fire Fighting Equipment, Level 3
 
 The purpose of this entry-level qualification is to provide the Fire Protection industry with people who have the skills and knowledge to install and maintain hand operated fire fighting equipment.
 
 Graduates will work under limited supervision, and in accordance with the New Zealand Building Code, current Standards, regulations and ordinances, and other internationally accepted standards.
-
-NZQA qualification overview
 
 New Zealand Certificate in Fixed Fire Protection Systems, Level 3
 
@@ -97,7 +93,7 @@ The purpose of this entry-level qualification is to provide the Fire Protection 
 
 Graduates will work under limited supervision and in accordance with the New Zealand Building Code, current Standards, regulations and ordinances, and other internationally accepted standards.
 
-NZQA qualification overview    Fees free eligible
+   
 
 New Zealand Certificate in Fire Detection and Alarm Systems, Level 3
 
@@ -105,15 +101,13 @@ The purpose of this entry-level qualification is to provide the Fire Protection 
 
 Graduates will work under limited supervision and in accordance with the New Zealand Building Code, current Standards, regulations and ordinances, and other internationally accepted Standards.
 
-NZQA qualification overview
-
 New Zealand Certificate in Fire Protection Systems Technology (Testing), Level 3
 
 The purpose of this entry-level qualification is to provide the Fire Protection industry with testers who have the skills and knowledge to test active fire protection systems (fire detection and alarm systems and fixed fire protection systems). 
 
 Graduates will work under limited supervision, and in accordance with the New Zealand Building Code, current Standards, regulations and ordinances, and other internationally accepted standards.
 
-NZQA qualification overview     Fees free eligible
+     
 
 New Zealand Certificate in Passive Fire Protection Systems, Level 4
 
@@ -124,7 +118,7 @@ This qualification aims to benefit building owners and occupiers, the insurance 
 
 Completion of this qualification is recognised by a number of Territorial Authorities as one of the criteria for registration of IQPs. An IQP (in passive fire protection system) is a person whom the local Territorial Authority has confirmed as qualified to inspect, maintain and report on passive fire protection system in accordance with the requirements, and to certify that these procedures have been followed.
 
-NZQA qualification overview     Fees free eligible
+     
 
 New Zealand Certificate in Fire Detection and Alarm Systems, Level 4
 
@@ -132,7 +126,7 @@ The purpose of this qualification is to provide the Fire Protection industry wit
 
 Graduates will work in accordance with the New Zealand Building Code, current Standards, regulations and ordinances, and other internationally accepted standards.
 
-NZQA qualification overview     Fees free eligible
+     
 
 New Zealand Certificate in Fire Protection Systems Technology (Inspections), Level 4
 
@@ -142,7 +136,7 @@ The qualification includes two strands - graduates will either specialise in in
 
 Graduates will work in accordance with the New Zealand Building Code, current Standards, regulations and ordinances, and other internationally accepted Standards.
 
-NZQA qualification overview     Fees free eligible
+     
 
 New Zealand Certificate in Fixed Fire Protection Systems with an optional strand in Special Hazards Fixed Fire Protection Systems, Level 4
 
@@ -152,4 +146,4 @@ Graduates will work in accordance with the New Zealand Building Code, current St
 
 The qualification includes an optional strand to provide the additional skills and knowledge required to undertake work relating to special hazards fixed fire protection systems.
 
-NZQA qualification overview     Fees free eligible
+     
