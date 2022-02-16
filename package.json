@@ -7,15 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node scrape.js",
     "write finetune": "node createGptFinetune.js",
-    "amala": "node ./crawlers/crawlAmala.js"
+    "openAi": "node openAi.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "get-sitemap-links": "^1.0.6",
     "got": "^11.8.2",
     "html-to-text": "^8.1.0",
     "jsdom": "^17.0.0",
+    "openai": "^2.0.2",
     "slugify": "^1.6.5"
   }
 }
