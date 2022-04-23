@@ -6,17 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node scrape.js",
+    "writeAmala": "node ./crawlers/writeToAmala.js",
     "write finetune": "node createGptFinetune.js",
     "openAi": "node openAi.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.26.1",
     "dotenv": "^16.0.0",
     "get-sitemap-links": "^1.0.6",
     "got": "^11.8.2",
     "html-to-text": "^8.1.0",
     "jsdom": "^17.0.0",
+    "marked": "^4.0.14",
     "openai": "^2.0.2",
     "slugify": "^1.6.5"
   }
