@@ -48,23 +48,19 @@ async function scrapeDom(webpage) {
       Date: datePosted,
       Content,
     };
-    console.log(Content);
 
-    // const { data } = await axios.post(
-    //   "https://amala-backend.herokuapp.com/api/articles",
-    //   { data: articleObj }
-    // );
-    // console.log(data);
-    // console.log(`Uploaded ${Title}`);
+    const { data } = await axios.post(
+      "https://amala-backend.herokuapp.com/api/articles",
+      { data: articleObj }
+    );
+    console.log(data);
+    console.log(`Uploaded ${Title}`);
     return main;
   } catch (error) {
     console.log(error.message);
     return error.message;
   }
 }
-scrapeDom(
-  `http://ariamala.com/index.php/2017/10/26/may-all-the-blossoms-within-you-unfurl/`
-);
 
 function addWordsToCount(str) {
   const stringLength = str.split(" ").length;
@@ -95,7 +91,7 @@ const scrapeAllPages = async (arrOfPages) => {
 
 async function index() {
   try {
-    const response = await scrapeAllPages(amalaPages); // an array of pages' paragraph data
+    const response = await scrapeAllPages(amalaPages.slice(6, amalaPages.length)); // an array of pages' paragraph data
     //  writeDoc("./documents/masterdoc.json", JSON.stringify(response));
     console.log(response);
     return response;
@@ -104,4 +100,4 @@ async function index() {
   }
 }
 
-//index();
+index();

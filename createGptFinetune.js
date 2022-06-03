@@ -1,5 +1,6 @@
 const masterdoc = require("./documents/masterdoc.json");
 const fs = require("fs");
+const { readSupabase } = require("./supabase");
 
 function writeDoc(filename, body) {
   fs.writeFile(
@@ -17,18 +18,39 @@ function writeDoc(filename, body) {
   );
 }
 
-function jsonlConversion(arr) {
+function jsonlConversion(arr, { promptField, completion }) {
+  // the promptField is a column name from the supabase entry, and completion is a function that takes the row as an argument and returns a string
   const jsonl = arr
-    .map((x) => JSON.stringify({ prompt: "", completion: x }))
+    .map((row) =>
+      JSON.stringify({
+        prompt: promptField ? row[promptField] : "",
+        completion: completion(row) || row,
+      })
+    )
     .join("\n");
   return jsonl;
 }
 
-function index() {
-  writeDoc(
-    "./jsonl/website-finetune.jsonl",
-    jsonlConversion(masterdoc)
-  );
+async function formatData() {
+  const data = await readSupabase("internal_job_profiles");
+  const formatted = jsonlConversion(data, {
+    promptField: "title",
+    completion: (row) => {
+      return `WHAT THEY WILL DO:\n\n${row["do"]}\n\nWHAT THEY WILL BE:\n\n${row["be"]}\n\nWHAT THEY WILL HAVE:\n\n${row["have"]}\n\n
+      `;
+    },
+  });
+  console.log(formatted);
+  return formatted;
+}
+
+async function index() {
+  try {
+    const docData = await formatData();
+    writeDoc("./jsonl/job-profiles.jsonl", docData);
+  } catch (error) {
+    console.log(error.message);
+  }
 }
 
 index();
