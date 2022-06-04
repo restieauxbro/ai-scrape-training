@@ -14,12 +14,14 @@ let labels = [
   { text: "positive sentiment" },
   { text: "negative sentiment" },
   { text: "neutral sentiment" },
+  { text: "christmas" },
+  { text: "halloween" },
 ];
 
 let embeddedLabels = [];
 
 const input = {
-  text: "I can't wait to get started!",
+  text: "I can't wait to make a snowman!",
 };
 
 async function getEmbedding(label, { pushToArray }) {
@@ -42,14 +44,17 @@ async function getEmbedding(label, { pushToArray }) {
 
 // check if labels are the same as in storedEmbeddings
 function checkLabels() {
-  const storedLabels = storedEmbeddings.map(({ text }) => text);
-  const inputLabels = labels.map(({ text }) => text);
-  const sameLabels = storedLabels.every((label, i) => label === inputLabels[i]);
+  const storedLabels = storedEmbeddings.map(({ text }) => text).sort();
+  const inputLabels = labels.map(({ text }) => text).sort();
+  const sameLabels = inputLabels.every((label, i) => label === storedLabels[i]);
+  sameLabels
+    ? console.log("\nusing stored labels")
+    : console.log("\nembedding labels");
   return sameLabels;
 }
 
 // get embeddings for all labels with a Promise.all
-async function getAllEmbeddingsPromiseAll() {
+async function getAllEmbeddings() {
   try {
     const promises = labels.map((label) =>
       getEmbedding(label, { pushToArray: true })
@@ -67,36 +72,16 @@ async function classifyInput() {
     if (checkLabels()) {
       embeddedLabels = storedEmbeddings;
     } else {
-      await getAllEmbeddingsPromiseAll();
+      await getAllEmbeddings();
     }
     // find the label with the highest similarity
-    let highestSimilarity = 0;
-    let highestSimilarityLabel = "";
-    let difference;
-    for (let i = 0; i < embeddedLabels.length; i++) {
-      const similarityToLabel = similarity(
-        embeddedLabels[i].embedding,
-        inputEmbedding.embedding
-      );
-
-      console.log(
-        "similarity to label: ",
-        embeddedLabels[i].text,
-        similarityToLabel
-      );
-      if (similarityToLabel > highestSimilarity) {
-        // find the difference between the highest similarity and the second highest similarity
-        difference = similarityToLabel - highestSimilarity;
-        highestSimilarity = similarityToLabel;
-        highestSimilarityLabel = embeddedLabels[i].text;
-      }
-    }
-    console.log(
-      "\n\nhighest similarity: ",
-      highestSimilarityLabel,
-      "\n\n with a difference of: ",
-      difference
-    );
+    const similarities = embeddedLabels.map(({ text, embedding }) => {
+      const score = similarity(inputEmbedding.embedding, embedding);
+      return { text, score };
+    });
+    const sorted = similarities.sort((a, b) => b.score - a.score);
+    console.log(sorted);
+    return sorted;
   } catch (error) {
     console.log(error.message);
   }
