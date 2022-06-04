@@ -1,6 +1,8 @@
 const { Configuration, OpenAIApi } = require("openai");
 require("dotenv").config();
 const similarity = require("compute-cosine-similarity");
+const { writeDoc } = require("../utils/writeDoc");
+const storedEmbeddings = require("./embeddings.json");
 
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
@@ -8,6 +10,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 let labels = [
+  { text: "excited sentiment" },
   { text: "positive sentiment" },
   { text: "negative sentiment" },
   { text: "neutral sentiment" },
@@ -16,7 +19,7 @@ let labels = [
 let embeddedLabels = [];
 
 const input = {
-  text: "I'm not totally sure how to feel, somethings I liked and others I wasn't sure of.",
+  text: "I can't wait to get started!",
 };
 
 async function getEmbedding(label, { pushToArray }) {
@@ -37,12 +40,22 @@ async function getEmbedding(label, { pushToArray }) {
   }
 }
 
-// get embeddings for all labels
-async function getAllEmbeddings() {
+// check if labels are the same as in storedEmbeddings
+function checkLabels() {
+  const storedLabels = storedEmbeddings.map(({ text }) => text);
+  const inputLabels = labels.map(({ text }) => text);
+  const sameLabels = storedLabels.every((label, i) => label === inputLabels[i]);
+  return sameLabels;
+}
+
+// get embeddings for all labels with a Promise.all
+async function getAllEmbeddingsPromiseAll() {
   try {
-    for (let i = 0; i < labels.length; i++) {
-      await getEmbedding(labels[i], { pushToArray: true });
-    }
+    const promises = labels.map((label) =>
+      getEmbedding(label, { pushToArray: true })
+    );
+    await Promise.all(promises);
+    writeDoc("./openai/embeddings.json", JSON.stringify(embeddedLabels));
   } catch (error) {
     console.log(error.message);
   }
@@ -51,7 +64,11 @@ async function getAllEmbeddings() {
 async function classifyInput() {
   try {
     const inputEmbedding = await getEmbedding(input, { pushToArray: false });
-    await getAllEmbeddings();
+    if (checkLabels()) {
+      embeddedLabels = storedEmbeddings;
+    } else {
+      await getAllEmbeddingsPromiseAll();
+    }
     // find the label with the highest similarity
     let highestSimilarity = 0;
     let highestSimilarityLabel = "";
