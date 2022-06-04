@@ -8,13 +8,15 @@
     "start": "node scrape.js",
     "writeAmala": "node ./crawlers/writeToAmala.js",
     "write finetune": "node createGptFinetune.js",
-    "openAi": "node openAi.js"
+    "openAi": "node openAi.js",
+    "openAi embedding": "node ./openai/embeddings.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@supabase/supabase-js": "^1.35.3",
     "axios": "^0.26.1",
+    "compute-cosine-similarity": "^1.0.0",
     "dotenv": "^16.0.0",
     "get-sitemap-links": "^1.0.6",
     "got": "^11.8.2",
