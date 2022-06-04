@@ -15,7 +15,9 @@ let labels = [
 
 let embeddedLabels = [];
 
-const input = { text: "This is so lame omg" };
+const input = {
+  text: "I'm not totally sure how to feel, somethings I liked and others I wasn't sure of.",
+};
 
 async function getEmbedding(label, { pushToArray }) {
   try {
@@ -35,13 +37,12 @@ async function getEmbedding(label, { pushToArray }) {
   }
 }
 
-// get embeddings for all labels and then console log the labels and embeddings
+// get embeddings for all labels
 async function getAllEmbeddings() {
   try {
     for (let i = 0; i < labels.length; i++) {
       await getEmbedding(labels[i], { pushToArray: true });
     }
-    // console.log(embeddedLabels);
   } catch (error) {
     console.log(error.message);
   }
@@ -54,18 +55,31 @@ async function classifyInput() {
     // find the label with the highest similarity
     let highestSimilarity = 0;
     let highestSimilarityLabel = "";
+    let difference;
     for (let i = 0; i < embeddedLabels.length; i++) {
       const similarityToLabel = similarity(
         embeddedLabels[i].embedding,
         inputEmbedding.embedding
       );
-      console.log('similarity to label: ', embeddedLabels[i].text, similarityToLabel);
+
+      console.log(
+        "similarity to label: ",
+        embeddedLabels[i].text,
+        similarityToLabel
+      );
       if (similarityToLabel > highestSimilarity) {
+        // find the difference between the highest similarity and the second highest similarity
+        difference = similarityToLabel - highestSimilarity;
         highestSimilarity = similarityToLabel;
         highestSimilarityLabel = embeddedLabels[i].text;
       }
     }
-    console.log("highest similarity: ", highestSimilarityLabel);
+    console.log(
+      "\n\nhighest similarity: ",
+      highestSimilarityLabel,
+      "\n\n with a difference of: ",
+      difference
+    );
   } catch (error) {
     console.log(error.message);
   }
