@@ -10,24 +10,23 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 let labels = [
-  { text: "excited sentiment" },
-  { text: "positive sentiment" },
-  { text: "negative sentiment" },
-  { text: "neutral sentiment" },
-  { text: "christmas" },
-  { text: "halloween" },
+  { text: "mechanical engineering" },
+  { text: "cooking" },
+  { text: "automotive engineering" },
+  { text: "electrician" },
 ];
 
 let embeddedLabels = [];
 
 const input = {
-  text: "I can't wait to make a snowman!",
+  text: "Sparky",
 };
 
 async function getEmbedding(label, { pushToArray }) {
   try {
+    let time = Date.now();
     console.log("getting embedding for label: ", label.text);
-    const response = await openai.createEmbedding("text-similarity-ada-001", {
+    const response = await openai.createEmbedding("text-similarity-curie-001", {
       input: label.text,
     });
     const { data } = response.data;
@@ -35,6 +34,11 @@ async function getEmbedding(label, { pushToArray }) {
     if (pushToArray) {
       embeddedLabels.push({ text: label.text, embedding });
     }
+    console.log(
+      Date.now() - time,
+      "ms to get embedding for label: ",
+      label.text
+    );
     return { text: label.text, embedding };
   } catch (error) {
     console.log(error.message);
