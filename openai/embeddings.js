@@ -10,23 +10,21 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 let labels = [
-  { text: "mechanical engineering" },
-  { text: "cooking" },
-  { text: "automotive engineering" },
-  { text: "electrician" },
+  { text: `A recent episode of the Conspirituality podcast called, ‘Elena Brower Could Stop Selling doTERRA,’ is a brilliant investigative report on Brower’s toxic mash-up of girl boss life coaching, yoga courses, and Multi-Level Marketing (MLM) schemes. However, the podcast also paints a picture that’s far bigger than Elena Brower. Matthew Remski elucidates the trend of these schemes being sold under the guise of, “a pseudo-feminism that pretends to uplift women while actually spiritualising the worst aspects of predatory capitalism.” When I first heard that sentence, I skipped back so I could listen to it again because it hit me so hard. It made me reflect on every MLM I’ve been invited to join. It made me think of the invitations to join women’s gifting circles, blessing looms, and lotuses – all of which are pyramid schemes in new age language.` },
+  { text: `I’ve had a kink about wanting to be a good girl for my whole life. I just didn’t know it was a deep erotic desire. I thought I actually wanted to be good. When I was a little girl that meant being a good Christian and a good daughter. Later in life, it meant doing a good job of playing into tantric and spiritual conventions. More recently, I’ve been trying to be good by remaining in the bounds of woke etiquette. I also try to be good by doing my best to appear politically engaged and intelligent. I think being seen as intelligent is one of my kinks too. It holds a very specific kind of sexual charge for me.  The delightfully amusing thing about trying to be good, that quite often it doesn’t lead to good outcomes. I can see this so clearly in my own life.` },
 ];
 
 let embeddedLabels = [];
 
 const input = {
-  text: "Sparky",
+  text: "hippies",
 };
 
-async function getEmbedding(label, { pushToArray }) {
+async function getEmbedding(label, { pushToArray, model }) {
+  const modelEndpoint = model || "text-similarity-curie-001";
   try {
     let time = Date.now();
-    console.log("getting embedding for label: ", label.text);
-    const response = await openai.createEmbedding("text-similarity-curie-001", {
+    const response = await openai.createEmbedding(modelEndpoint, {
       input: label.text,
     });
     const { data } = response.data;
@@ -61,7 +59,10 @@ function checkLabels() {
 async function getAllEmbeddings() {
   try {
     const promises = labels.map((label) =>
-      getEmbedding(label, { pushToArray: true })
+      getEmbedding(label, {
+        pushToArray: true,
+        model: "text-search-curie-doc-001",
+      })
     );
     await Promise.all(promises);
     writeDoc("./openai/embeddings.json", JSON.stringify(embeddedLabels));
@@ -72,7 +73,10 @@ async function getAllEmbeddings() {
 
 async function classifyInput() {
   try {
-    const inputEmbedding = await getEmbedding(input, { pushToArray: false });
+    const inputEmbedding = await getEmbedding(input, {
+      pushToArray: false,
+      model: "text-search-curie-query-001",
+    });
     if (checkLabels()) {
       embeddedLabels = storedEmbeddings;
     } else {
