@@ -32,14 +32,14 @@ async function uploadFile(file, purpose) {
     throw error;
   }
 }
-// uploadFile("./jsonl/job-profiles.jsonl", "fine-tune");
-// returned file-Oo8A9hvERZHgURwxzsFswaGs
+// uploadFile("./jsonl/job-profiles-v2.jsonl", "fine-tune");
+// returned file-AvmzmANmJuis3to56WLUtvI1
 
 async function finetuneJob(uploadedFile) {
   try {
     const response = await openai.createFineTune({
       training_file: uploadedFile,
-      suffix: "job-profiles-v1",
+      suffix: "job-profiles-v2",
     });
     const { data } = response;
     console.log(data);
@@ -48,8 +48,8 @@ async function finetuneJob(uploadedFile) {
     throw error;
   }
 }
-// finetuneJob("file-Oo8A9hvERZHgURwxzsFswaGs");
-// returned curie:ft-restio:job-profiles-v1-2022-06-03-05-43-18
+// finetuneJob('file-AvmzmANmJuis3to56WLUtvI1');
+// returned curie:ft-restio:job-profiles-v2-2022-06-15-02-55-55
 
 async function listGPTFineTunes() {
   try {

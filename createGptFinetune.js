@@ -21,12 +21,16 @@ function writeDoc(filename, body) {
 function jsonlConversion(arr, { promptFunction, completionFunction }) {
   // the promptField is a column name from the supabase entry, and completion is a function that takes the row as an argument and returns a string
   const jsonl = arr
-    .map((row) =>
-      JSON.stringify({
+    .map((row, i) => {
+      writeDoc(
+        `./documents/job-profiles/${i}.txt`,
+        (promptFunction(row) + completionFunction(row)).trim()
+      );
+      return JSON.stringify({
         prompt: promptFunction(row) || "",
         completion: completionFunction(row) || row,
-      })
-    )
+      });
+    })
     .join("\n");
   return jsonl;
 }
@@ -56,14 +60,18 @@ async function formatData() {
     });
   const formatted = jsonlConversion(cleanedData, {
     promptFunction: ({ title, department, purpose }) => {
-      return `Title: ${title}\nDepartment: ${department}\nPurpose: ${purpose}`;
+      return `Title: ${title}\nDepartment: ${department}\nPurpose: ${purpose.trim()}`;
     },
     completionFunction: (row) => {
-      return `### WHAT THEY WILL DO: ###\n\n${row["tasks"]}\n\n### WHAT THEY WILL BE: ###\n\n${row["be"]}\n\n### WHAT THEY WILL HAVE: ###\n\n${row["have"]}
-      `.trim();
+      const strArr = [
+        `\n\n\nWHAT THEY WILL DO:\n\n${row["tasks"].trim()}`,
+        `\n\n\nWHAT THEY WILL BE:\n\n${row["be"].trim()}`,
+        `\n\n\nWHAT THEY WILL HAVE:\n\n${row["have"].trim()}`,
+      ];
+      const orderArrRandomly = strArr.sort(() => Math.random() - 0.5);
+      return orderArrRandomly.join("") + `\n\n\n--END--`;
     },
   });
-  console.log(formatted);
   return formatted;
 }
 
@@ -72,7 +80,7 @@ async function formatData() {
 async function index() {
   try {
     const docData = await formatData();
-    writeDoc("./jsonl/job-profiles.jsonl", docData);
+    writeDoc("./jsonl/job-profiles-v2.jsonl", docData);
   } catch (error) {
     console.log(error.message);
   }

@@ -9,7 +9,8 @@
     "writeAmala": "node ./crawlers/writeToAmala.js",
     "write finetune": "node createGptFinetune.js",
     "openAi": "node openAi.js",
-    "openAi embedding": "node ./openai/embeddings.js"
+    "openAi embedding": "node ./openai/embeddings.js",
+    "pinecone": "node ./openai/pinecone.js"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +24,7 @@
     "html-to-text": "^8.1.0",
     "jsdom": "^17.0.0",
     "marked": "^4.0.14",
+    "node-fetch": "^3.2.5",
     "openai": "^2.0.2",
     "slugify": "^1.6.5"
   }

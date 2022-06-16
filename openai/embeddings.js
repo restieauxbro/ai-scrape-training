@@ -56,9 +56,9 @@ function checkLabels() {
 }
 
 // get embeddings for all labels with a Promise.all
-async function getAllEmbeddings() {
+async function getAllEmbeddings(arr) {
   try {
-    const promises = labels.map((label) =>
+    const promises = arr.map((label) =>
       getEmbedding(label, {
         pushToArray: true,
         model: "text-search-curie-doc-001",
@@ -80,7 +80,7 @@ async function classifyInput() {
     if (checkLabels()) {
       embeddedLabels = storedEmbeddings;
     } else {
-      await getAllEmbeddings();
+      await getAllEmbeddings(labels);
     }
     // find the label with the highest similarity
     const similarities = embeddedLabels.map(({ text, embedding }) => {
@@ -95,3 +95,5 @@ async function classifyInput() {
   }
 }
 classifyInput();
+
+exports.getAllEmbeddings = getAllEmbeddings;
