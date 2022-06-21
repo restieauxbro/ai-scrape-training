@@ -24,7 +24,8 @@ async function getEmbedding(label, { pushToArray, model }) {
   const modelEndpoint = model || "text-similarity-curie-001";
   try {
     let time = Date.now();
-    const response = await openai.createEmbedding(modelEndpoint, {
+    const response = await openai.createEmbedding( {
+      model: modelEndpoint,
       input: label.text,
     });
     const { data } = response.data;
@@ -61,7 +62,7 @@ async function getAllEmbeddings(arr) {
     const promises = arr.map((label) =>
       getEmbedding(label, {
         pushToArray: true,
-        model: "text-search-curie-doc-001",
+        model: "text-search-babbage-query-001",
       })
     );
     await Promise.all(promises);
@@ -75,7 +76,7 @@ async function classifyInput() {
   try {
     const inputEmbedding = await getEmbedding(input, {
       pushToArray: false,
-      model: "text-search-curie-query-001",
+      model: "text-search-babbage-query-001",
     });
     if (checkLabels()) {
       embeddedLabels = storedEmbeddings;
