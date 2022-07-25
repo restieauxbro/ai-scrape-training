@@ -11,8 +11,7 @@ async function getSearchTerms() {
     let { data: search_terms, error } = await supabase
       .from("search_terms")
       .select("term")
-      .eq("is_preferred", false)
-      .limit(100)
+      .eq("is_preferred", true);
     const justStrings = search_terms.map((term) => term.term);
     console.log(justStrings);
     return justStrings;
@@ -30,7 +29,11 @@ async function getSuggestedTerms(arr) {
       .from("suggested_programme_terms")
       .select("query, suggested_terms")
       .or(str);
-    console.log(suggested_programme_terms);
+    console.log(
+      suggested_programme_terms,
+      "length",
+      suggested_programme_terms.length
+    );
     return suggested_programme_terms;
   } catch (error) {
     console.log(error.message);
@@ -41,7 +44,7 @@ async function index() {
   try {
     let search_terms = await getSearchTerms();
     const suggested = await getSuggestedTerms(search_terms);
-  //  writeDoc("suggested.json", JSON.stringify(suggested));
+    //  writeDoc("suggested.json", JSON.stringify(suggested));
   } catch (error) {
     console.log(error.message);
   }
