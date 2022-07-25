@@ -10,7 +10,8 @@
     "write finetune": "node createGptFinetune.js",
     "openAi": "node openAi.js",
     "openAi embedding": "node ./openai/embeddingsToSupabase.js",
-    "pinecone": "node ./openai/pinecone.js"
+    "pinecone": "node ./openai/pinecone.js",
+    "suggestedAndCorrected": "node ./spellCheckerAndSuggester/index.js"
   },
   "author": "",
   "license": "ISC",

@@ -1,4 +1,7 @@
 const { createClient } = require("@supabase/supabase-js");
+const corrections = require("./corrections");
+const suggested = require("./suggested.json");
+const fs = require("fs");
 const writeDoc = require("../utils/writeDoc");
 
 const supabaseUrl = "https://exglnvnbkodfbtxqzwqf.supabase.co";
@@ -40,7 +43,7 @@ async function getSuggestedTerms(arr) {
   }
 }
 
-async function index() {
+async function getPreferredSuggestions() {
   try {
     let search_terms = await getSearchTerms();
     const suggested = await getSuggestedTerms(search_terms);
@@ -50,4 +53,42 @@ async function index() {
   }
 }
 
-index();
+function jsonLinesFromCorrections(corrections) {
+  return corrections
+    .map(([query, correction]) => {
+      return `{"prompt":${JSON.stringify(
+        `${query}\n`
+      )},"completion":${JSON.stringify(`\nCorrected: ${correction}`)}}`;
+    })
+    .join("\n");
+}
+
+function jsonLinesFromSuggested(suggested) {
+  return suggested
+    .map(({ query, suggested_terms }) => {
+      return `{"prompt":${JSON.stringify(
+        `${query}\n`
+      )},"completion":${JSON.stringify(
+        `\nSuggested: ${suggested_terms.join(", ")}`
+      )}}`;
+    })
+    .join("\n");
+}
+
+const jsonlDocument =
+  jsonLinesFromCorrections(corrections) +
+  "\n" +
+  jsonLinesFromSuggested(suggested);
+
+//console.log(JSON.stringify(jsonlDocument));
+
+fs.writeFile(
+  "./spellCheckerAndSuggester/related-and-corrected.jsonl",
+  jsonlDocument,
+  function (err) {
+    if (err) {
+      return console.log(err);
+    }
+    console.log("The file was saved!");
+  }
+);

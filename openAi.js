@@ -32,14 +32,15 @@ async function uploadFile(file, purpose) {
     throw error;
   }
 }
-// uploadFile("./jsonl/job-profiles-v2.jsonl", "fine-tune");
-// returned file-AvmzmANmJuis3to56WLUtvI1
+//  uploadFile("./spellCheckerAndSuggester/related-and-corrected.jsonl", "fine-tune");
+// returned file-IejjUasW2zZCJZiHDTYSvlQN
 
 async function finetuneJob(uploadedFile) {
   try {
     const response = await openai.createFineTune({
       training_file: uploadedFile,
-      suffix: "job-profiles-v2",
+      model: "babbage",
+      suffix: "related-and-corrected-terms",
     });
     const { data } = response;
     console.log(data);
@@ -48,7 +49,7 @@ async function finetuneJob(uploadedFile) {
     throw error;
   }
 }
-// finetuneJob('file-AvmzmANmJuis3to56WLUtvI1');
+// finetuneJob("file-IejjUasW2zZCJZiHDTYSvlQN");
 // returned curie:ft-restio:job-profiles-v2-2022-06-15-02-55-55
 
 async function listGPTFineTunes() {
@@ -62,6 +63,4 @@ async function listGPTFineTunes() {
   }
 }
 
-listGPTFineTunes();
-
-
+listGPTFineTunes()

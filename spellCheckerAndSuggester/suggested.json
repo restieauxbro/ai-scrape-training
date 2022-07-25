@@ -2,7 +2,7 @@
   {
     "query": "engineer",
     "suggested_terms": [
-      " Civil engineering",
+      "Civil engineering",
       "Mechanical engineering",
       "Electrical engineering",
       "Industrial engineering"
@@ -11,16 +11,14 @@
   {
     "query": "nursing",
     "suggested_terms": [
-      " Nursing",
-      "Medical assisting",
-      "Dental assisting",
-      "Veterinary assisting"
+      "Nursing bachelor",
+      "Veterinary nursing"
     ]
   },
   {
     "query": "vet",
     "suggested_terms": [
-      " Veterinary Medicine",
+      "Veterinary Medicine",
       "Veterinary Technician",
       "Veterinary Science",
       "Veterinary Dentistry"
@@ -29,7 +27,7 @@
   {
     "query": "mechanical engineering",
     "suggested_terms": [
-      " Aerospace engineering",
+      "Aerospace engineering",
       "Biomedical engineering",
       "Chemical engineering",
       "Civil engineering"
@@ -38,7 +36,7 @@
   {
     "query": "Mechanical engineering",
     "suggested_terms": [
-      " Aerospace engineering",
+      "Aerospace engineering",
       "Biomedical engineering",
       "Chemical engineering",
       "Civil engineering"
@@ -47,7 +45,7 @@
   {
     "query": "nurse",
     "suggested_terms": [
-      " Nursing",
+      "Nursing",
       "Medical assisting",
       "Dental assisting",
       "Veterinary assisting"
@@ -56,7 +54,7 @@
   {
     "query": "Civil engineering",
     "suggested_terms": [
-      " Environmental engineering",
+      "Environmental engineering",
       "Infrastructure engineering",
       "Transportation engineering",
       "Structural engineering"
@@ -65,7 +63,7 @@
   {
     "query": "Structural engineering",
     "suggested_terms": [
-      " Civil engineering",
+      "Civil engineering",
       "Materials engineering",
       "Structural engineering",
       "Earthquake engineering"
@@ -74,7 +72,7 @@
   {
     "query": "marketing",
     "suggested_terms": [
-      " Advertising",
+      "Advertising",
       "Public relations",
       "Marketing research",
       "Business administration"
@@ -83,7 +81,7 @@
   {
     "query": "diploma",
     "suggested_terms": [
-      " Nursing",
+      "Nursing",
       "Veterinary Medicine",
       "Architecture",
       "Engineering"
@@ -92,7 +90,7 @@
   {
     "query": "Architecture",
     "suggested_terms": [
-      " Urban Planning",
+      "Urban Planning",
       "Interior Design",
       "Landscape Architecture",
       "Building Construction"
@@ -101,7 +99,7 @@
   {
     "query": "Building Construction",
     "suggested_terms": [
-      " Architecture",
+      "Architecture",
       "Engineering",
       "Construction Management",
       "Building Technology"
@@ -110,7 +108,7 @@
   {
     "query": "Information technology",
     "suggested_terms": [
-      " Information technology",
+      "Information technology",
       "Computer science",
       "Web development",
       "Database administration"
@@ -119,7 +117,7 @@
   {
     "query": "Web development",
     "suggested_terms": [
-      " Web development",
+      "Web development",
       "Graphic design",
       "Mobile development",
       "Software development"
@@ -128,7 +126,7 @@
   {
     "query": "Graphic design",
     "suggested_terms": [
-      " Graphic design ",
+      "Graphic design ",
       "Advertising design ",
       "Graphic design education ",
       "Graphic design jobs"
@@ -139,7 +137,7 @@
     "suggested_terms": [
       "Apprenticeship in the construction industry",
       "Apprenticeship in the culinary industry",
-      "Apprenticeship in the medical field",
+      "Apprenticeship in engineering",
       "Apprenticeship in the technology field"
     ]
   },
@@ -389,8 +387,8 @@
     "query": "plumbing",
     "suggested_terms": [
       "Plumbing Technology",
-      "Plumbing Engineering",
-      "Plumbing Management",
+      "Gasfitting",
+      "Drainlaying",
       "Plumbing Services"
     ]
   },

@@ -1,0 +1,89 @@
+{"prompt":"Mechanic engineering\n","completion":"\nCorrected: Mechanical engineering"}
+{"prompt":"Electrical enginieering\n","completion":"\nCorrected: Electrical engineering"}
+{"prompt":"Ingeneering\n","completion":"\nCorrected: Engineering"}
+{"prompt":"civil enginieering\n","completion":"\nCorrected: Civil engineering"}
+{"prompt":"Compuer science\n","completion":"\nCorrected: Computer science"}
+{"prompt":"Urban planes\n","completion":"\nCorrected: Urban planning"}
+{"prompt":"Harticulture\n","completion":"\nCorrected: Horticulture"}
+{"prompt":"hostpitality\n","completion":"\nCorrected: Hospitality"}
+{"prompt":"Marketting\n","completion":"\nCorrected: Marketing"}
+{"prompt":"Manufaturing\n","completion":"\nCorrected: Manufacturing"}
+{"prompt":"Bankimg and finacial servises\n","completion":"\nCorrected: Banking and financial services"}
+{"prompt":"Construcion\n","completion":"\nCorrected: Construction"}
+{"prompt":"Educatuon\n","completion":"\nCorrected: Education"}
+{"prompt":"Reterail, Reatil, Reetail\n","completion":"\nCorrected: Retail"}
+{"prompt":"Transportaion\n","completion":"\nCorrected: Transportation"}
+{"prompt":"Enviromental planning\n","completion":"\nCorrected: Environmental planning"}
+{"prompt":"phinance and banking\n","completion":"\nCorrected: Finance and banking"}
+{"prompt":"Health care\n","completion":"\nCorrected: Health care"}
+{"prompt":"Aerspace engineering\n","completion":"\nCorrected: Aerospace engineering"}
+{"prompt":"Matierals science\n","completion":"\nCorrected: Materials science"}
+{"prompt":"industrial engineer\n","completion":"\nCorrected: Industrial engineering"}
+{"prompt":"Material science\n","completion":"\nCorrected: Materials science"}
+{"prompt":"industrail engineering\n","completion":"\nCorrected: Industrial engineering"}
+{"prompt":"Nusring\n","completion":"\nCorrected: Nursing"}
+{"prompt":"Veterinary nurcing\n","completion":"\nCorrected: Veterinary nursing"}
+{"prompt":"Aged caree\n","completion":"\nCorrected: Aged care"}
+{"prompt":"Childred education\n","completion":"\nCorrected: Childhood education"}
+{"prompt":"Dental nurcing\n","completion":"\nCorrected: Dental nursing"}
+{"prompt":"Podiatry nursing\n","completion":"\nCorrected: Podiatric nursing"}
+{"prompt":"Nurseaide\n","completion":"\nCorrected: Nurse aide"}
+{"prompt":"Interpeter\n","completion":"\nCorrected: Interpreter"}
+{"prompt":"Dental nusing\n","completion":"\nCorrected: Dental nursing"}
+{"prompt":"Podiatry nursing\n","completion":"\nCorrected: Podiatric nursing"}
+{"prompt":"Sport nursing\n","completion":"\nCorrected: Sports nursing"}
+{"prompt":"adult aducation\n","completion":"\nCorrected: Adult education"}
+{"prompt":"Carreer education\n","completion":"\nCorrected: Career education"}
+{"prompt":"Krytical thinking\n","completion":"\nCorrected: Critical thinking"}
+{"prompt":"Design thinkng\n","completion":"\nCorrected: Design thinking"}
+{"prompt":"Social worry\n","completion":"\nCorrected: Social work"}
+{"prompt":"Beekeping\n","completion":"\nCorrected: Beekeeping"}
+{"prompt":"looksmithing\n","completion":"\nCorrected: Locksmithing"}
+{"prompt":"engineer\n","completion":"\nSuggested: Civil engineering, Mechanical engineering, Electrical engineering, Industrial engineering"}
+{"prompt":"nursing\n","completion":"\nSuggested: Nursing bachelor, Veterinary nursing"}
+{"prompt":"vet\n","completion":"\nSuggested: Veterinary Medicine, Veterinary Technician, Veterinary Science, Veterinary Dentistry"}
+{"prompt":"mechanical engineering\n","completion":"\nSuggested: Aerospace engineering, Biomedical engineering, Chemical engineering, Civil engineering"}
+{"prompt":"Mechanical engineering\n","completion":"\nSuggested: Aerospace engineering, Biomedical engineering, Chemical engineering, Civil engineering"}
+{"prompt":"nurse\n","completion":"\nSuggested: Nursing, Medical assisting, Dental assisting, Veterinary assisting"}
+{"prompt":"Civil engineering\n","completion":"\nSuggested: Environmental engineering, Infrastructure engineering, Transportation engineering, Structural engineering"}
+{"prompt":"Structural engineering\n","completion":"\nSuggested: Civil engineering, Materials engineering, Structural engineering, Earthquake engineering"}
+{"prompt":"marketing\n","completion":"\nSuggested: Advertising, Public relations, Marketing research, Business administration"}
+{"prompt":"diploma\n","completion":"\nSuggested: Nursing, Veterinary Medicine, Architecture, Engineering"}
+{"prompt":"Architecture\n","completion":"\nSuggested: Urban Planning, Interior Design, Landscape Architecture, Building Construction"}
+{"prompt":"Building Construction\n","completion":"\nSuggested: Architecture, Engineering, Construction Management, Building Technology"}
+{"prompt":"Information technology\n","completion":"\nSuggested: Information technology, Computer science, Web development, Database administration"}
+{"prompt":"Web development\n","completion":"\nSuggested: Web development, Graphic design, Mobile development, Software development"}
+{"prompt":"Graphic design\n","completion":"\nSuggested: Graphic design , Advertising design , Graphic design education , Graphic design jobs"}
+{"prompt":"apprentice\n","completion":"\nSuggested: Apprenticeship in the construction industry, Apprenticeship in the culinary industry, Apprenticeship in engineering, Apprenticeship in the technology field"}
+{"prompt":"Infrastructure engineering\n","completion":"\nSuggested: Civil engineering, Mechanical engineering, Electrical engineering, Information technology"}
+{"prompt":"Manufacturing technology\n","completion":"\nSuggested: Manufacturing engineering, Manufacturing technology, Industrial engineering, Manufacturing management"}
+{"prompt":"Manufacturing\n","completion":"\nSuggested: Manufacturing engineering, Manufacturing technology, Manufacturing management, Manufacturing engineering technology"}
+{"prompt":"welding\n","completion":"\nSuggested: Welding Technology, Welding Engineering, Welding Manufacturing, Welding Technology and Engineering"}
+{"prompt":"manufacturing\n","completion":"\nSuggested: Manufacturing engineering, Manufacturing management, Manufacturing technology, Manufacturing engineering technology"}
+{"prompt":"Marketing\n","completion":"\nSuggested: Advertising, Business Administration, Economics, Marketing"}
+{"prompt":"commerce\n","completion":"\nSuggested: Business Administration, Marketing, Finance, Entrepreneurship"}
+{"prompt":"Competenz\n","completion":"\nSuggested: Business, Marketing, Human Resources, Accounting"}
+{"prompt":"Accounting\n","completion":"\nSuggested: Business Administration, Finance, Accounting, Taxation"}
+{"prompt":"business\n","completion":"\nSuggested: Business Administration, Business Law, Marketing, Finance"}
+{"prompt":"Business\n","completion":"\nSuggested: Business Administration, Business Law, Business Ethics, Business Strategy"}
+{"prompt":"machining\n","completion":"\nSuggested: Manufacturing, Engineering, Technology, Business"}
+{"prompt":"Automotive engineering\n","completion":"\nSuggested: Vehicle engineering, Motor vehicle engineering, Automotive engineering, Vehicle manufacturing"}
+{"prompt":"Interior design\n","completion":"\nSuggested: Interior decorating, Furniture design, Graphic design, Interior architecture"}
+{"prompt":"education\n","completion":"\nSuggested: Education, Psychology, Sociology, Business"}
+{"prompt":"veterinary nursing\n","completion":"\nSuggested: Veterinary medicine, Veterinary technician, Veterinary science, Veterinary assistant"}
+{"prompt":"Animal Trainer\n","completion":"\nSuggested: Veterinary Medicine, Animal Science, Animal Behavior, Animal Training"}
+{"prompt":"Nursing\n","completion":"\nSuggested: Nursing Assistant, Nursing, Nurse Practitioner, Registered Nurse"}
+{"prompt":"Transportation\n","completion":"\nSuggested: Transportation planning, Transportation engineering, Transportation management, Transportation research"}
+{"prompt":"interior design\n","completion":"\nSuggested: Interior decorating, Graphic design, Furniture design, Building design"}
+{"prompt":"baking\n","completion":"\nSuggested: Culinary Arts, Home Economics, Food Science, Dietetics"}
+{"prompt":"electrical engineering\n","completion":"\nSuggested: Mechanical engineering, Computer engineering, Electrical engineering, Industrial engineering"}
+{"prompt":"electrical\n","completion":"\nSuggested: Electrical engineering, Electrical engineering technology, Electrical engineering management, Electrical engineering research"}
+{"prompt":"Healthcare\n","completion":"\nSuggested: Nursing, Medical Technology, Healthcare Administration, Healthcare Policy"}
+{"prompt":"Botany\n","completion":"\nSuggested: Plant science, Ecology, Horticulture"}
+{"prompt":"Horticulture\n","completion":"\nSuggested: Landscaping, Arboriculture, Fruit production, Landscape horticulture"}
+{"prompt":"Education\n","completion":"\nSuggested: Childhood Education, Teaching, Tertiary Education, Education support"}
+{"prompt":"Carpentry\n","completion":"\nSuggested: Architecture, Engineering, Homebuilding, Construction"}
+{"prompt":"plumbing\n","completion":"\nSuggested: Plumbing Technology, Gasfitting, Drainlaying, Plumbing Services"}
+{"prompt":"electrician\n","completion":"\nSuggested: Electrical Engineering, Electrical Maintenance, Electrical apprenticeship, Electrictrotechnology"}
+{"prompt":"graduate diploma in marketing\n","completion":"\nSuggested: Marketing, Advertising, Public relations, Sales"}
+{"prompt":"art\n","completion":"\nSuggested: Fine art, Graphic design, Print"}
