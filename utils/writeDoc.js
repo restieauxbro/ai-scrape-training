@@ -17,4 +17,6 @@ function writeDoc(filename, body) {
     );
   }
 
-  exports.writeDoc = writeDoc;
+module.exports = function writeDoc(filename, body) {
+  writeDoc(filename, body);
+}

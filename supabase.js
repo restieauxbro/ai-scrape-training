@@ -21,13 +21,13 @@ async function upsertToDB(tableName, values, { onConflictColumn }) {
       .upsert(values, { onConflict: onConflictColumn, returning: "minimal" });
     if (!error) {
       console.log("Upserted", values.length, "rows to", tableName);
-    }
-    else console.log(error.message);
+    } else console.log(error.message);
     return data;
   } catch (error) {
     console.log(error.message);
   }
 }
 
+exports.supabase = createClient(supabaseUrl, supabaseKey);
 exports.readSupabase = readSupabase;
 exports.upsertToDB = upsertToDB;

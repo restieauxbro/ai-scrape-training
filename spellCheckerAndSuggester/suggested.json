@@ -1,0 +1,414 @@
+[
+  {
+    "query": "engineer",
+    "suggested_terms": [
+      " Civil engineering",
+      "Mechanical engineering",
+      "Electrical engineering",
+      "Industrial engineering"
+    ]
+  },
+  {
+    "query": "nursing",
+    "suggested_terms": [
+      " Nursing",
+      "Medical assisting",
+      "Dental assisting",
+      "Veterinary assisting"
+    ]
+  },
+  {
+    "query": "vet",
+    "suggested_terms": [
+      " Veterinary Medicine",
+      "Veterinary Technician",
+      "Veterinary Science",
+      "Veterinary Dentistry"
+    ]
+  },
+  {
+    "query": "mechanical engineering",
+    "suggested_terms": [
+      " Aerospace engineering",
+      "Biomedical engineering",
+      "Chemical engineering",
+      "Civil engineering"
+    ]
+  },
+  {
+    "query": "Mechanical engineering",
+    "suggested_terms": [
+      " Aerospace engineering",
+      "Biomedical engineering",
+      "Chemical engineering",
+      "Civil engineering"
+    ]
+  },
+  {
+    "query": "nurse",
+    "suggested_terms": [
+      " Nursing",
+      "Medical assisting",
+      "Dental assisting",
+      "Veterinary assisting"
+    ]
+  },
+  {
+    "query": "Civil engineering",
+    "suggested_terms": [
+      " Environmental engineering",
+      "Infrastructure engineering",
+      "Transportation engineering",
+      "Structural engineering"
+    ]
+  },
+  {
+    "query": "Structural engineering",
+    "suggested_terms": [
+      " Civil engineering",
+      "Materials engineering",
+      "Structural engineering",
+      "Earthquake engineering"
+    ]
+  },
+  {
+    "query": "marketing",
+    "suggested_terms": [
+      " Advertising",
+      "Public relations",
+      "Marketing research",
+      "Business administration"
+    ]
+  },
+  {
+    "query": "diploma",
+    "suggested_terms": [
+      " Nursing",
+      "Veterinary Medicine",
+      "Architecture",
+      "Engineering"
+    ]
+  },
+  {
+    "query": "Architecture",
+    "suggested_terms": [
+      " Urban Planning",
+      "Interior Design",
+      "Landscape Architecture",
+      "Building Construction"
+    ]
+  },
+  {
+    "query": "Building Construction",
+    "suggested_terms": [
+      " Architecture",
+      "Engineering",
+      "Construction Management",
+      "Building Technology"
+    ]
+  },
+  {
+    "query": "Information technology",
+    "suggested_terms": [
+      " Information technology",
+      "Computer science",
+      "Web development",
+      "Database administration"
+    ]
+  },
+  {
+    "query": "Web development",
+    "suggested_terms": [
+      " Web development",
+      "Graphic design",
+      "Mobile development",
+      "Software development"
+    ]
+  },
+  {
+    "query": "Graphic design",
+    "suggested_terms": [
+      " Graphic design ",
+      "Advertising design ",
+      "Graphic design education ",
+      "Graphic design jobs"
+    ]
+  },
+  {
+    "query": "apprentice",
+    "suggested_terms": [
+      "Apprenticeship in the construction industry",
+      "Apprenticeship in the culinary industry",
+      "Apprenticeship in the medical field",
+      "Apprenticeship in the technology field"
+    ]
+  },
+  {
+    "query": "Infrastructure engineering",
+    "suggested_terms": [
+      "Civil engineering",
+      "Mechanical engineering",
+      "Electrical engineering",
+      "Information technology"
+    ]
+  },
+  {
+    "query": "Manufacturing technology",
+    "suggested_terms": [
+      "Manufacturing engineering",
+      "Manufacturing technology",
+      "Industrial engineering",
+      "Manufacturing management"
+    ]
+  },
+  {
+    "query": "Manufacturing",
+    "suggested_terms": [
+      "Manufacturing engineering",
+      "Manufacturing technology",
+      "Manufacturing management",
+      "Manufacturing engineering technology"
+    ]
+  },
+  {
+    "query": "welding",
+    "suggested_terms": [
+      "Welding Technology",
+      "Welding Engineering",
+      "Welding Manufacturing",
+      "Welding Technology and Engineering"
+    ]
+  },
+  {
+    "query": "manufacturing",
+    "suggested_terms": [
+      "Manufacturing engineering",
+      "Manufacturing management",
+      "Manufacturing technology",
+      "Manufacturing engineering technology"
+    ]
+  },
+  {
+    "query": "Marketing",
+    "suggested_terms": [
+      "Advertising",
+      "Business Administration",
+      "Economics",
+      "Marketing"
+    ]
+  },
+  {
+    "query": "commerce",
+    "suggested_terms": [
+      "Business Administration",
+      "Marketing",
+      "Finance",
+      "Entrepreneurship"
+    ]
+  },
+  {
+    "query": "Competenz",
+    "suggested_terms": [
+      "Business",
+      "Marketing",
+      "Human Resources",
+      "Accounting"
+    ]
+  },
+  {
+    "query": "Accounting",
+    "suggested_terms": [
+      "Business Administration",
+      "Finance",
+      "Accounting",
+      "Taxation"
+    ]
+  },
+  {
+    "query": "business",
+    "suggested_terms": [
+      "Business Administration",
+      "Business Law",
+      "Marketing",
+      "Finance"
+    ]
+  },
+  {
+    "query": "Business",
+    "suggested_terms": [
+      "Business Administration",
+      "Business Law",
+      "Business Ethics",
+      "Business Strategy"
+    ]
+  },
+  {
+    "query": "machining",
+    "suggested_terms": [
+      "Manufacturing",
+      "Engineering",
+      "Technology",
+      "Business"
+    ]
+  },
+  {
+    "query": "Automotive engineering",
+    "suggested_terms": [
+      "Vehicle engineering",
+      "Motor vehicle engineering",
+      "Automotive engineering",
+      "Vehicle manufacturing"
+    ]
+  },
+  {
+    "query": "Interior design",
+    "suggested_terms": [
+      "Interior decorating",
+      "Furniture design",
+      "Graphic design",
+      "Interior architecture"
+    ]
+  },
+  {
+    "query": "education",
+    "suggested_terms": ["Education", "Psychology", "Sociology", "Business"]
+  },
+  {
+    "query": "veterinary nursing",
+    "suggested_terms": [
+      "Veterinary medicine",
+      "Veterinary technician",
+      "Veterinary science",
+      "Veterinary assistant"
+    ]
+  },
+  {
+    "query": "Animal Trainer",
+    "suggested_terms": [
+      "Veterinary Medicine",
+      "Animal Science",
+      "Animal Behavior",
+      "Animal Training"
+    ]
+  },
+  {
+    "query": "Nursing",
+    "suggested_terms": [
+      "Nursing Assistant",
+      "Nursing",
+      "Nurse Practitioner",
+      "Registered Nurse"
+    ]
+  },
+  {
+    "query": "Transportation",
+    "suggested_terms": [
+      "Transportation planning",
+      "Transportation engineering",
+      "Transportation management",
+      "Transportation research"
+    ]
+  },
+  {
+    "query": "interior design",
+    "suggested_terms": [
+      "Interior decorating",
+      "Graphic design",
+      "Furniture design",
+      "Building design"
+    ]
+  },
+  {
+    "query": "baking",
+    "suggested_terms": [
+      "Culinary Arts",
+      "Home Economics",
+      "Food Science",
+      "Dietetics"
+    ]
+  },
+  {
+    "query": "electrical engineering",
+    "suggested_terms": [
+      "Mechanical engineering",
+      "Computer engineering",
+      "Electrical engineering",
+      "Industrial engineering"
+    ]
+  },
+  {
+    "query": "electrical",
+    "suggested_terms": [
+      "Electrical engineering",
+      "Electrical engineering technology",
+      "Electrical engineering management",
+      "Electrical engineering research"
+    ]
+  },
+  {
+    "query": "Healthcare",
+    "suggested_terms": [
+      "Nursing",
+      "Medical Technology",
+      "Healthcare Administration",
+      "Healthcare Policy"
+    ]
+  },
+  {
+    "query": "Botany",
+    "suggested_terms": ["Plant science", "Ecology", "Horticulture"]
+  },
+  {
+    "query": "Horticulture",
+    "suggested_terms": [
+      "Landscaping",
+      "Arboriculture",
+      "Fruit production",
+      "Landscape horticulture"
+    ]
+  },
+  {
+    "query": "Education",
+    "suggested_terms": [
+      "Childhood Education",
+      "Teaching",
+      "Tertiary Education",
+      "Education support"
+    ]
+  },
+  {
+    "query": "Carpentry",
+    "suggested_terms": [
+      "Architecture",
+      "Engineering",
+      "Homebuilding",
+      "Construction"
+    ]
+  },
+  {
+    "query": "plumbing",
+    "suggested_terms": [
+      "Plumbing Technology",
+      "Plumbing Engineering",
+      "Plumbing Management",
+      "Plumbing Services"
+    ]
+  },
+  {
+    "query": "electrician",
+    "suggested_terms": [
+      "Electrical Engineering",
+      "Electrical Maintenance",
+      "Electrical apprenticeship",
+      "Electrictrotechnology"
+    ]
+  },
+  {
+    "query": "graduate diploma in marketing",
+    "suggested_terms": ["Marketing", "Advertising", "Public relations", "Sales"]
+  },
+  {
+    "query": "art",
+    "suggested_terms": ["Fine art", "Graphic design", "Print"]
+  }
+]
